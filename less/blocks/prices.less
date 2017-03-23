@@ -1,4 +1,114 @@
-// Импорт стилей
-@import "variables.less";
-@import "base.less";
-@import "font-settings.less";
+.prices{
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+  background: @color-bggray;
+  position: relative;
+  width: 100vw;
+  min-height: 850px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.prices h2{
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.prices h2::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 47%;
+  top: 70px;
+  width: 68px;
+  height: 1px;
+  background: @color-blue;
+}
+
+.prices .wrapper>p{
+  margin-bottom: 75px;
+}
+
+.prices__items{
+  display: flex;
+  justify-content: space-around;
+}
+
+.prices__item{
+  margin-right: 35px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.prices__item:last-of-type{
+  margin-right: 0;
+}
+
+table{
+  width: 360px;
+  border-collapse: collapse;
+}
+
+.prices__item h3{
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: 24px;
+  color: @color-white;
+  margin-bottom: 15px;
+}
+
+.prices__item p{
+  color: @color-white;
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+}
+
+.price-yes,
+.price-no{
+  width: 9px;
+  height: 9px;
+}
+
+td{
+  height: 50px;
+  text-align: left;
+  border-bottom: 1px dotted @color-lightgray;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  line-height: 50px;
+  color: @color-darkgray;
+  background: @color-white;
+  padding: 0 30px;
+}
+
+td:nth-of-type(2n){
+  text-align: right;
+}
+
+thead td{
+  background: @color-darkgray;
+  text-align: center;
+  padding-top: 5px;
+  height: 100px;
+  color: @color-white;
+}
+
+.blue{
+  background: @color-blue;
+}
+
+.color-blue{
+  color: @color-blue;
+}
+
+.color-white{
+  color: @color-white;
+}
+
+.column__price{
+  font-size: 18px;
+}

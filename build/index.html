@@ -13,7 +13,8 @@
 <body>
     <div class="wrapper">
         <header class="page-header">
-            <nav>
+          <div class="wrapper">
+            <nav class="page-header__menu">
                 <a href="index.html"><img class="page-header__logo" src="img/logo_landx.png" alt=""></a>
                 <div class="page-header__social">
                     <a href=""><img class="page-header__social-fb" src="img/icon_header_fb.png" alt=""></a>
@@ -22,16 +23,16 @@
                 </div>
             </nav>
             <div class="page-header__content">
-                <h1>Get the Best Solution for Your Business</h1>
-                <p>Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base.</p>
+                <h1>Get the Best <span class="color-blue">Solution</span> for Your Business</h1>
+                <p class="page-header__content-text">Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base.</p>
                 <form>
                     <input type="name" id="name" placeholder="Your name">
                     <input type="email" id="email" placeholder="Your E-Mail">
-                    <input type="tel" id="tel" placeholder="Phone Nubmer">
-                    <button type="submit">Get started</button>
+                    <input type="tel" id="tel" placeholder="Phone Number">
+                    <button class="btn btn-form-blue" type="submit">Get started</button>
                 </form>
-                <p>Register Now and Get FREE Trial</p>
             </div>
+          </div>
         </header>
         <main>
             <section class="brief">
@@ -61,29 +62,31 @@
                     </div>
                 </div>
                 <div class="brief-left">
-                    <div class="brief-left__content">
-                        <h2>Describe more about product</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                        <div class="brief-left__features">
-                            <div class="brief-left__feature">
-                                <div class="brief-left__feature-img1"></div>
-                                <div class="brief-left__feature-text">
-                                    <h3>Good in Performance</h3>
-                                    <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.</p>
+                    <div class="wrapper">
+                        <div class="brief-left__content">
+                            <h2>Describe more about product</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                            <div class="brief-left__features">
+                                <div class="brief-left__feature">
+                                    <div class="brief-left__feature-img1"></div>
+                                    <div class="brief-left__feature-text">
+                                        <h3>Good in Performance</h3>
+                                        <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brief-left__features">
+                                <div class="brief-left__feature">
+                                    <div class="brief-left__feature-img2"></div>
+                                    <div class="brief-left__feature-text">
+                                        <h3>Video Background</h3>
+                                        <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="brief-left__features">
-                            <div class="brief-left__feature">
-                                <div class="brief-left__feature-img2"></div>
-                                <div class="brief-left__feature-text">
-                                    <h3>Video Background</h3>
-                                    <p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <img class="brief-left__img" src="img/img_briefleft.jpg" alt="">
                     </div>
-                    <img class="brief-left__img" src="img/img_briefleft.jpg" alt="">
                 </div>
             </section>
             </section>
@@ -124,6 +127,7 @@
                 </div>
             </section>
             <section class="prices">
+              <div class="wrapper">
                 <h2>Pricing Table</h2>
                 <p>Term sheet convertible note colluding bootstrapping.</p>
                 <div class="prices__items">
@@ -144,28 +148,28 @@
                                 </tr>
                                 <tr>
                                     <td>Unlimited Styles</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Advance Protection</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Cloud Storage</td>
-                                    <td><img class="price-no" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-no.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>24/7 Customer Service</td>
-                                    <td><img class="price-no" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-no.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Backup Service</td>
-                                    <td><img class="price-no" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-no.png" alt=""></td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>$99 Per Month</td>
+                                    <td><b class="column__price">$99 Per Month</b></td>
                                     <td><button class="btn" type="submit">Sign Up</button></td>
                                 </tr>
                             </tfoot>
@@ -175,9 +179,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td colspan="2">
-                                        <h3>Basic</h3>
-                                        <p>From <span class="color-blue">$199</span> per month</p>
+                                    <td class="blue" colspan="2">
+                                        <h3>Premium</h3>
+                                        <p>From <span class="color-white">$199</span> per month</p>
                                     </td>
                                 </tr>
                             </thead>
@@ -188,29 +192,29 @@
                                 </tr>
                                 <tr>
                                     <td>Unlimited Styles</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Advance Protection</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Cloud Storage</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>24/7 Customer Service</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Backup Service</td>
-                                    <td><img class="price-no" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-no.png" alt=""></td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>$99 Per Month</td>
-                                    <td><button class="btn" type="submit">Sign Up</button></td>
+                                    <td><b class="column__price">$99 Per Month</b></td>
+                                    <td><button class="btn btn-table-blue" type="submit">Sign Up</button></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -220,7 +224,7 @@
                             <thead>
                                 <tr>
                                     <td colspan="2">
-                                        <h3>Basic</h3>
+                                        <h3>Ultimate</h3>
                                         <p>From <span class="color-blue">$299</span> per month</p>
                                     </td>
                                 </tr>
@@ -232,28 +236,28 @@
                                 </tr>
                                 <tr>
                                     <td>Unlimited Styles</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Advance Protection</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Cloud Storage</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>24/7 Customer Service</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td>Backup Service</td>
-                                    <td><img class="price-yes" src="" alt=""></td>
+                                    <td><img class="price-yes" src="img/price-yes.png" alt=""></td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>$99 Per Month</td>
+                                    <td><b class="column__price">$99 Per Month</b></td>
                                     <td><button class="btn" type="submit">Sign Up</button></td>
                                 </tr>
                             </tfoot>
@@ -261,6 +265,7 @@
                     </div>
 
                 </div>
+              </div>
             </section>
             <section class="video">
                 <h2>Watch Video</h2>
@@ -283,6 +288,7 @@
                 </div>
             </section>
             <section class="screenshots">
+              <div class="wrapper">
                 <h2>Product Screenshots</h2>
                 <p>Term sheet convertible note colluding bootstrapping.</p>
                 <div class="screenshots__items">
@@ -301,6 +307,7 @@
                             <img class="screenshots__item" src="img/img_screenshot_3.jpg">
                         </a>
                     </div>
+                  </div>
                 </div>
             </section>
             <section class="trusted">
@@ -337,21 +344,24 @@
                 </div>
             </section>
             <section class="promo">
+              <div class="wrapper">
                 <p>We Are Ready to Help You</p>
                 <h2>Get the Best Solution for Your Business</h2>
-                <button type="submit">Get Started</button>
+                <button class="btn btn-blue" type="submit">Get Started<img src="img/arrow.png"></button>
+              </div>
             </section>
         </main>
         <footer class="page-footer">
-            <div class="page-footer__content">
+            <div class="page-footer__content-top">
                 <p>Have any question or need help?</p>
-                <b>CONTACT US NOW</b>
+                <img class="page-footer__icon-mail" src="img/icon_mail.png"><b>CONTACT US NOW</b>
             </div>
-            <div class="page-footer__content">
+            <div class="page-footer__content-bottom">
+              <div class="wrapper">
                 <a href="#">
-                    <img class="page-footer__logo" src="img/logo_landx.png">
+                    <img class="page-footer__logo" src="img/logo_footer_landx.png">
                 </a>
-                <p>©2014 LandX Template LLC. </p>
+                <p class="page-footer__copyright">©2014 LandX Template LLC. </p>
                 <ul class="page-footer__social">
                     <li>
                         <a class="page-footer__social-fb" href="#"></a>
@@ -372,6 +382,7 @@
                         <a class="page-footer__social-ln" href="#"></a>
                     </li>
                 </ul>
+              </div>
             </div>
         </footer>
     </div>

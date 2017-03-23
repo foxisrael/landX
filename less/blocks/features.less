@@ -1,3 +1,49 @@
+.features{
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+.features h2{
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.features h2::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 47%;
+  top: 70px;
+  width: 68px;
+  height: 1px;
+  background: @color-blue;
+}
+
+.features p{
+  margin-bottom: 75px;
+}
+
+.features-items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-item{
+  width: 310px;
+}
+
+.features-item img{
+  margin-bottom: 40px;
+}
+
+.features-item h3{
+  margin-bottom: 25px;
+}
+
 .features-item-design{
   width: 50px;
   height: 50px;

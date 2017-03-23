@@ -1,8 +1,22 @@
 .page-header{
-  width: 100%;
+  width: 100vw;
   height: 750px;
   background-image: url('../img/bg_header.jpg');
   background-size: cover;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.page-header__menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 165px;
 }
 
 .page-header__logo{
@@ -17,4 +31,43 @@
   display: inline-block;
   width: 26px;
   height: 25px;
+}
+
+.color-blue{
+  font-weight: 800;
+  color: @color-blue;
+}
+
+.page-header__content p{
+  font-size: 20px;
+  color: @color-white;
+  width: 690px;
+  display: block;
+  margin: 0 auto 75px;
+  position: relative;
+}
+
+form{
+  width: 950px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="tel"]{
+  width: 205px;
+  height: 55px;
+  border-radius: 2px;
+  background: @color-black;
+  color: #ffffff;
+  border: 1px solid @color-blue;
+  border-left: 4px solid @color-blue;
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 20px;
+  margin-right: 20px;
 }

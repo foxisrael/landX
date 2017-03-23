@@ -1,3 +1,38 @@
+.trusted{
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+.trusted h2{
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.trusted h2::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 47%;
+  top: 70px;
+  width: 68px;
+  height: 1px;
+  background: @color-blue;
+}
+
+.trusted p{
+  margin-bottom: 75px;
+}
+
+.trusted__logos{
+  display: flex;
+  justify-content: space-around;
+  width: 670px;
+  margin: 0 auto 75px;
+}
+
 .trusted__logo-vogue{
   width: 129px;
   height: 45px;
@@ -22,4 +57,52 @@
   width: 361px;
   height: 243px;
   background: url("../img/img_text.png") no-repeat;
+}
+
+.trusted__items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.trusted__item{
+  position: relative;
+}
+
+.trusted__item::before{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 34px;
+  background: @color-blue url("../img/text-element.png") no-repeat center;
+  border-radius: 5px;
+  top: -17px;
+  left: 46%;
+  z-index: 2;
+}
+
+.trusted__item::after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 41px;
+  background: @color-white;
+  border-radius: 5px;
+  border: 1px solid @color-lightgray;
+  top: -20px;
+  left: 45%;
+}
+
+.trusted__item{
+  padding: 30px 30px 0;
+}
+
+.trusted__item b{
+  color: @color-blue;
+  font-weight: bold;
+}
+
+.trusted__item p{
+  font-size: 13px;
 }

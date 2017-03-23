@@ -9,9 +9,10 @@
 .brief-right__feature-img2,
 .brief-left__feature-img1,
 .brief-left__feature-img2{
-  width: 33px;
+  width: 50px;
   height: 33px;
   border-radius: 10%;
+  margin-right: 20px;
 }
 
 .brief-right__feature-img1{
@@ -28,4 +29,68 @@
 
 .brief-left__feature-img2{
   background: url("../img/icon_4.png") @color-blue center no-repeat;
+}
+
+.brief-right{
+  min-height: 625px;
+  padding: 100px 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brief-left{
+  background: @color-bggray;
+  position: relative;
+  width: 100vw;
+  min-height: 625px;
+  padding: 100px 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.brief-left .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.brief-right__content,
+.brief-left__content{
+  width: 550px;
+  position: relative;
+}
+
+.brief-right__content::before,
+.brief-left__content::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 85px;
+  width: 68px;
+  height: 1px;
+  background: @color-blue;
+}
+
+.brief-right__feature,
+.brief-left__feature{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.brief-right__content h2,
+.brief-left__content h2{
+  margin-bottom: 75px;
+}
+
+.brief-right__content>p,
+.brief-left__content>p{
+  margin-bottom: 40px;
+}
+
+.brief-right__feature-text h3,
+.brief-left__feature-text h3{
+  margin-bottom: 10px;
 }

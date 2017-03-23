@@ -1,3 +1,31 @@
+.video{
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+.video h2{
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.video h2::before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: 47%;
+  top: 70px;
+  width: 68px;
+  height: 1px;
+  background: @color-blue;
+}
+
+.video p{
+  margin-bottom: 75px;
+}
+
 .video_youtube{
   width: 945px;
   height: 532px;
@@ -8,4 +36,16 @@
 .video__item-icon3{
   width: 19px;
   height: 19px;
+  margin-right: 20px;
+}
+
+.video__items{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.video__item{
+  display: flex;
+  justify-content: flex-start;
 }
